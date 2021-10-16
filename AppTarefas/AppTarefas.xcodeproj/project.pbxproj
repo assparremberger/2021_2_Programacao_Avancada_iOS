@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		45CD029FEB2CD4216DE8809D /* Pods_AppTarefas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1236DB226F18B66B2E384CA9 /* Pods_AppTarefas.framework */; };
 		DC1A51C72711BAFC009EC6C9 /* AppTarefasApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1A51C62711BAFC009EC6C9 /* AppTarefasApp.swift */; };
 		DC1A51C92711BAFC009EC6C9 /* TaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1A51C82711BAFC009EC6C9 /* TaskListView.swift */; };
 		DC1A51CB2711BAFF009EC6C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC1A51CA2711BAFF009EC6C9 /* Assets.xcassets */; };
@@ -14,9 +15,15 @@
 		DC1A51D62711BD1B009EC6C9 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1A51D52711BD1B009EC6C9 /* Task.swift */; };
 		DC1A51D82711C893009EC6C9 /* TaskListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1A51D72711C893009EC6C9 /* TaskListViewModel.swift */; };
 		DC1A51DA2711C992009EC6C9 /* TaskCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1A51D92711C992009EC6C9 /* TaskCellViewModel.swift */; };
+		DC1A51DC27120473009EC6C9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC1A51DB27120473009EC6C9 /* GoogleService-Info.plist */; };
+		DC255306271ADEAB0000044E /* FirebaseFirestore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC255305271ADEAB0000044E /* FirebaseFirestore.framework */; };
+		DC95382127121B0A00390D4D /* FirestoreTaskRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC95382027121B0A00390D4D /* FirestoreTaskRepository.swift */; };
+		DC95382427121EA200390D4D /* TaskRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC95382327121EA200390D4D /* TaskRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1236DB226F18B66B2E384CA9 /* Pods_AppTarefas.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppTarefas.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		30062F264AE9935F2E443DDE /* Pods-AppTarefas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppTarefas.debug.xcconfig"; path = "Target Support Files/Pods-AppTarefas/Pods-AppTarefas.debug.xcconfig"; sourceTree = "<group>"; };
 		DC1A51C32711BAFC009EC6C9 /* AppTarefas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppTarefas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC1A51C62711BAFC009EC6C9 /* AppTarefasApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTarefasApp.swift; sourceTree = "<group>"; };
 		DC1A51C82711BAFC009EC6C9 /* TaskListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListView.swift; sourceTree = "<group>"; };
@@ -25,6 +32,11 @@
 		DC1A51D52711BD1B009EC6C9 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		DC1A51D72711C893009EC6C9 /* TaskListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewModel.swift; sourceTree = "<group>"; };
 		DC1A51D92711C992009EC6C9 /* TaskCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCellViewModel.swift; sourceTree = "<group>"; };
+		DC1A51DB27120473009EC6C9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DC255305271ADEAB0000044E /* FirebaseFirestore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseFirestore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC95382027121B0A00390D4D /* FirestoreTaskRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreTaskRepository.swift; sourceTree = "<group>"; };
+		DC95382327121EA200390D4D /* TaskRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRepository.swift; sourceTree = "<group>"; };
+		ED05B38A6C5B4B514DDB648F /* Pods-AppTarefas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppTarefas.release.xcconfig"; path = "Target Support Files/Pods-AppTarefas/Pods-AppTarefas.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,17 +44,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC255306271ADEAB0000044E /* FirebaseFirestore.framework in Frameworks */,
+				45CD029FEB2CD4216DE8809D /* Pods_AppTarefas.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		47FB67642E28FC8BC1B25B38 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DC255305271ADEAB0000044E /* FirebaseFirestore.framework */,
+				1236DB226F18B66B2E384CA9 /* Pods_AppTarefas.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DC1A51BA2711BAFC009EC6C9 = {
 			isa = PBXGroup;
 			children = (
 				DC1A51C52711BAFC009EC6C9 /* AppTarefas */,
 				DC1A51C42711BAFC009EC6C9 /* Products */,
+				F889A53D37B78D15F1848A25 /* Pods */,
+				47FB67642E28FC8BC1B25B38 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,9 +82,11 @@
 		DC1A51C52711BAFC009EC6C9 /* AppTarefas */ = {
 			isa = PBXGroup;
 			children = (
+				DC95382227121E5B00390D4D /* Repositories */,
 				DC1A51D42711BCAD009EC6C9 /* Model */,
 				DC1A51C62711BAFC009EC6C9 /* AppTarefasApp.swift */,
 				DC1A51C82711BAFC009EC6C9 /* TaskListView.swift */,
+				DC1A51DB27120473009EC6C9 /* GoogleService-Info.plist */,
 				DC1A51CA2711BAFF009EC6C9 /* Assets.xcassets */,
 				DC1A51CC2711BAFF009EC6C9 /* Preview Content */,
 			);
@@ -84,6 +111,24 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		DC95382227121E5B00390D4D /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				DC95382027121B0A00390D4D /* FirestoreTaskRepository.swift */,
+				DC95382327121EA200390D4D /* TaskRepository.swift */,
+			);
+			name = Repositories;
+			sourceTree = "<group>";
+		};
+		F889A53D37B78D15F1848A25 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				30062F264AE9935F2E443DDE /* Pods-AppTarefas.debug.xcconfig */,
+				ED05B38A6C5B4B514DDB648F /* Pods-AppTarefas.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -91,9 +136,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DC1A51D12711BAFF009EC6C9 /* Build configuration list for PBXNativeTarget "AppTarefas" */;
 			buildPhases = (
+				648C2AD186192F5BCC33F44F /* [CP] Check Pods Manifest.lock */,
 				DC1A51BF2711BAFC009EC6C9 /* Sources */,
 				DC1A51C02711BAFC009EC6C9 /* Frameworks */,
 				DC1A51C12711BAFC009EC6C9 /* Resources */,
+				EB23F8CEA09B72B0735D870D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -144,10 +191,53 @@
 			files = (
 				DC1A51CE2711BAFF009EC6C9 /* Preview Assets.xcassets in Resources */,
 				DC1A51CB2711BAFF009EC6C9 /* Assets.xcassets in Resources */,
+				DC1A51DC27120473009EC6C9 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		648C2AD186192F5BCC33F44F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AppTarefas-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB23F8CEA09B72B0735D870D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AppTarefas/Pods-AppTarefas-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AppTarefas/Pods-AppTarefas-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AppTarefas/Pods-AppTarefas-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DC1A51BF2711BAFC009EC6C9 /* Sources */ = {
@@ -156,9 +246,11 @@
 			files = (
 				DC1A51C92711BAFC009EC6C9 /* TaskListView.swift in Sources */,
 				DC1A51D82711C893009EC6C9 /* TaskListViewModel.swift in Sources */,
+				DC95382127121B0A00390D4D /* FirestoreTaskRepository.swift in Sources */,
 				DC1A51D62711BD1B009EC6C9 /* Task.swift in Sources */,
 				DC1A51C72711BAFC009EC6C9 /* AppTarefasApp.swift in Sources */,
 				DC1A51DA2711C992009EC6C9 /* TaskCellViewModel.swift in Sources */,
+				DC95382427121EA200390D4D /* TaskRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +375,7 @@
 		};
 		DC1A51D22711BAFF009EC6C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30062F264AE9935F2E443DDE /* Pods-AppTarefas.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,6 +405,7 @@
 		};
 		DC1A51D32711BAFF009EC6C9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED05B38A6C5B4B514DDB648F /* Pods-AppTarefas.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
